@@ -49,7 +49,7 @@ ZSH_CUSTOM=$HOME/.zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pip zsh-syntax-highlighting colored-man-pages golang)
+plugins=(git pip zsh-syntax-highlighting colored-man-pages docker)
 
 # User configuration
 
@@ -58,8 +58,6 @@ export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-
-source $HOME/.zsh_profile
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -87,4 +85,12 @@ source $HOME/.zsh_profile
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
+# to make colored-man-pages work properly
+export GROFF_NO_SGR=1
+
+# check if vim is installed
+if command -v vim > /dev/null; then
+  VIMRUNTIME=`vim -e -T dumb --cmd 'exe "set t_cm=\<C-M>"|echo $VIMRUNTIME|quit' | tr -d '\015' `
+  alias less="$VIMRUNTIME/macros/less.sh"
+fi
 unsetopt share_history
