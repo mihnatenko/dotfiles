@@ -2,7 +2,8 @@
 	co = checkout
 	st = status
 	br = branch
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	history = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	hist = log --pretty=format:'%C(auto)%h%Creset  %C(magenta)%ad%Creset | %C(auto)%s%d%Creset %C(blue bold)[%an]%Creset' --graph --date=short
 [core]
 	editor = vim
 [push]
