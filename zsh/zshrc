@@ -57,6 +57,8 @@ export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
+source ~/.zsh-profile
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -93,4 +95,5 @@ if command -v vim > /dev/null; then
   VIMRUNTIME=`vim -e -T dumb --cmd 'exe "set t_cm=\<C-M>"|echo $VIMRUNTIME|quit' | tr -d '\015' `
   alias less="$VIMRUNTIME/macros/less.sh"
 fi
+
 unsetopt share_history
