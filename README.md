@@ -17,8 +17,3 @@ Or install all configurations:
 ```
 make install
 ```
-## TODO
-* Backup existing files before installation
-* Add vim config
-* Create custom theme
-* Update submodules properly (probably `git pull --recurse-submodules` can be used)
