@@ -19,7 +19,7 @@ export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 # Custom commands and plugins that should not be tracked by git.
 # NOTE: it's important to source this file BEFORE oh-my-zsh.sh if it adds some
 # plugins and/or redefines ZSH_THEME. Otherwise it will not work.
-source ~/.zsh-profile
+source ~/.zsh-local
 
 source $ZSH/oh-my-zsh.sh
 
