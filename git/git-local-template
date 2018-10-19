@@ -1,0 +1,4 @@
+# This is a custom git config file for local computer. You can override
+# username and/or email for specific projects here
+# E.g.:
+# git config -f ~/.git-local user.email "my_mail@specific_project.com"

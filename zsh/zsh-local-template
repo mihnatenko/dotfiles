@@ -1,0 +1,6 @@
+# This is a custom zsh config file for local computer. Since it is loaded
+# before oh-my-zsh, you can override it's properties, like theme, etc. Or you
+# can include plugins that will be loaded. Like this:
+# plugins += (golang)
+#
+# Or you can define custom commands that shouldn't be tracked in ~/.zshrc
