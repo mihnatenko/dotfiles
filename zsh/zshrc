@@ -29,12 +29,12 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 # To make colored-man-pages work properly
 export GROFF_NO_SGR=1
 
-# Check if vim is installed and redefine less to use $VIMRUNTIME/macros/less.sh
+# Check if vim is installed and redefine view to use $VIMRUNTIME/macros/less.sh
 # It will be vim with syntax highlighting and all the stuff, but in readonly
 # mode and with some redefined commands (especialy `q` - exit)
 if command -v vim > /dev/null; then
   VIMRUNTIME=`vim -e -T dumb --cmd 'exe "set t_cm=\<C-M>"|echo $VIMRUNTIME|quit' | tr -d '\015' `
-  alias less="$VIMRUNTIME/macros/less.sh"
+  alias view="$VIMRUNTIME/macros/less.sh"
 fi
 
 unsetopt share_history
