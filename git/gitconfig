@@ -1,6 +1,6 @@
 [alias]
 	co = checkout
-	st = status -s
+	st = status
 	br = branch
 	history = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	hist = log --pretty=format:'%C(auto)%h%Creset  %C(magenta)%ad%Creset | %C(auto)%s%d%Creset %C(blue bold)[%an]%Creset' --graph --date=short
@@ -9,7 +9,7 @@
 	editor = vim
 
 [push]
-	default = simple
+	default = current
 
 [include]
 	path = ~/.git-local
