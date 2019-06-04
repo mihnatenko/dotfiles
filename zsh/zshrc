@@ -10,7 +10,7 @@ ZSH_CUSTOM=$HOME/.zsh-custom
 export MYDOTFILES="${$(readlink $ZSH_CUSTOM)%\/*\/*}"
 
 # Custom plugins that snould not be tracked by git can be added to
-# ~/.zsh-profile like this:
+# ~/.zsh-local like this:
 # plugins += (plugin1 plugin2)
 plugins=(git pip zsh-syntax-highlighting colored-man-pages docker)
 
