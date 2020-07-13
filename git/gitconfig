@@ -12,5 +12,8 @@
 [push]
 	default = current
 
+[pull]
+	ff = only
+
 [include]
 	path = ~/.git-local
